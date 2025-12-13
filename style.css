@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+   -webkit-tap-highlight-color: transparent;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure {
+  margin: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+:root {
+    --blue-500: hsl(217, 19%, 35%);
+    --blue-300: hsl(214, 17%, 51%);
+    --blue-200: hsl(212, 23%, 69%);
+    --blue-100: hsl(210, 46%, 95%);
+    --white: hsl(0, 0%, 100%);
+
+    --main-font: "Manrope", sans-serif;
+}

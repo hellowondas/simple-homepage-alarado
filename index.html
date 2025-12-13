@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The fastest way to build websites with resuable components">
 
     <link
       rel="icon"
@@ -10,64 +11,65 @@
       type="image/x-icon"
       sizes="96x96"
     />
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
 
     <title>Simple Homepage - Alarado | devChallenges.io</title>
-
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        height: 100vh;
-      }
-
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
-
-      .author-info a {
-        text-decoration: none;
-      }
-    </style>
   </head>
   <body>
-    <!-- 
-    About us
+    <main>
+      <section class="header">
+        <img src="./resources/logo-dark.svg" class="logo">
+        <nav>
+          <img src="./resources/hamburger-button.svg">
+          <ul class="links">
+            <li>About us</li>
+            <li>Product</li>
+            <li>Resource</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+        <div>
+          <button></button>
+          <button></button>
+        </div>
+      </section>
+      
+      <article>
+        <img src="./resources/hero-image-simple-homepage.png" alt="">
+      </article>
+      
+      <article>
+        <p>😎 Simple way to communicate</p>
+        <h1>Actions for Accessibility in Design</h1>
+        <p>The fastest way to build and deploy websites with reusable components.</p>
 
-    Product
+        <div>
+          <button>GET STARTED</button>
+          <li>Get live demo</li>
+        </div>
+        
+        <div>
+          <div>
+            <img src="./resources/Done_ring_round_fill.svg">
+          <p>No credit card required</p>
+          </div>
 
-    Resource
+          <div>
+            <img src="./resources/Done_ring_round_fill.svg">
+            <p>No software to install</p>
+          </div>
+        </div>
 
-    Contact
+      </article>
+    </main>
 
-    😎 Simple way to communicate
-
-    Actions for Accessibility in Design
-
-    The fastest way to build and deploy websites with resusable components.
-
-    Get Started
-
-    Get live demo
-
-    No credit card required
-
-    No software to install
-
-    -->
-
-    <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a
-      >.
-    </div>
   </body>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+  <script>
+    eruda.init();
+  </script> -->
 </html>

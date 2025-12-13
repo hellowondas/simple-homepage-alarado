@@ -20,10 +20,19 @@ This project is a pixel-perfect solution to the [Simple Homepage](https://devcha
 - Optimized local images for fast loading
 - No frameworks
 
+## 🎯 Goals
+
+The goals of this project are to:
+- Learn to use javascript to modify basic HTML & CSS elements
+- Learn how to add a theme toggle
+- Learn how to add mobile navigation
+
+
 ## 🛠️ Built With
 
 - HTML5
 - CSS3 (no frameworks)
+- JS
 
 ## 📦 Getting Started
 
