@@ -16,16 +16,15 @@ img {
 
 
 :root {
-#2A4DD0;
-#4CA154;
-#111729;
-#223344;
-#909193;
-#F2F9FE;
-#FFFFFF;
+--btn-links-color: #2A4DD0;
+--marker-color: #4CA154;
+--dark-color: #111729;
+--main-text-color: #223344;
+--cool-gray: #909193;
+--main-bg-color: #F2F9FE;
+--white: #FFFFFF;
 
 --main-font: "Poppins", sans-serif;
---main-bg-color: #F2F9FE;
 
 --fonts-lg: 3.75rem;
 --fonts-big: 1.125rem;
@@ -41,8 +40,6 @@ img {
 --padding-lg: 3rem;
 
 --spacing-sm: 1rem;
-
---text-colors: #223344;
 }
 
 
@@ -72,15 +69,8 @@ body {
 }
 
 
-/* .page-photo img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-} */
-
-
 .dark-color {
-  color: var(--text-color, #909193);
+  color: var(--main-text-color);
   font-weight: 600;
   text-transform: uppercase;
   margin: var(--margin-sm) 0rem;
@@ -90,14 +80,15 @@ body {
 
 
 .page-info h1 {
-  color: var(--text-colors);
+  color: var(--main-text-color);
   font-size: var(--h1-font, 2rem);
   font-weight: 700;
-  letter-spacing: var(--spacing-p, -0.05rem);
+  letter-spacing: var(--ltr-spacing, -0.05rem);
   max-width: 12.5rem;
 }
 
 
 .page-info .light-color {
-  color: var(--text-color, #223344);
+  color: var(--main-text-color);
+  margin-top: var(--top-margin, 1.5rem);
 }
