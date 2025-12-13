@@ -39,7 +39,18 @@
       </section>
       
       <article>
-        <img src="./resources/hero-image-simple-homepage.png" alt="">
+        <img 
+          src="./resources/hero-image-simple-homepage.png"
+          srcset="
+            ./resources/hero-image-simple-homepage@2x.png 800w,
+            ./resources/hero-image-simple-homepage@2x.png 1280w
+          "
+          sizes="
+            (max-width: 1024px) 1000px, 1280px
+          "
+          loading="lazy"
+          alt=""
+        />
       </article>
       
       <article>
@@ -55,7 +66,7 @@
         <div>
           <div>
             <img src="./resources/Done_ring_round_fill.svg">
-          <p>No credit card required</p>
+            <p>No credit card required</p>
           </div>
 
           <div>
