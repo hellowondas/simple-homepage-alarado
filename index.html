@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="style.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <title>Simple Homepage - Alarado | devChallenges.io</title>
   </head>
@@ -23,40 +23,41 @@
     <main>
       <section class="header">
         <img src="./resources/logo-dark.svg" class="logo">
-        <nav>
-          <img src="./resources/hamburger-button.svg">
-          <ul class="links">
-            <li>About us</li>
-            <li>Product</li>
-            <li>Resource</li>
-            <li>Contact</li>
-          </ul>
+
+        <nav class="menus">
+          <img src="./resources/hamburger-button.svg" class="ham-btn">
+        <!--  <ul class="links">
+          <li>About us</li>
+          <li>Product</li>
+          <li>Resource</li>
+          <li>Contact</li>
+        </ul> -->
         </nav>
-        <div>
-          <button></button>
-          <button></button>
-        </div>
+       <!--  <div>
+         <button></button>
+         <button></button>
+       </div> -->
       </section>
       
-      <article>
+      <article class="page-photo">
         <img 
           src="./resources/hero-image-simple-homepage.png"
           srcset="
-            ./resources/hero-image-simple-homepage@2x.png 800w,
+            ./resources/hero-image-simple-homepage.png 640w,
             ./resources/hero-image-simple-homepage@2x.png 1280w
           "
           sizes="
-            (max-width: 1024px) 1000px, 1280px
+            (max-width: 767px) 640px, 1280px
           "
           loading="lazy"
           alt=""
         />
       </article>
       
-      <article>
-        <p>😎 Simple way to communicate</p>
+      <article class="page-info">
+        <p class="dark-color">😎 Simple way to communicate</p>
         <h1>Actions for Accessibility in Design</h1>
-        <p>The fastest way to build and deploy websites with reusable components.</p>
+        <p class="light-color">The fastest way to build and deploy websites with reusable components.</p>
 
         <div>
           <button>GET STARTED</button>
