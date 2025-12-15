@@ -91,4 +91,56 @@ body {
 .page-info .light-color {
   color: var(--main-text-color);
   margin-top: var(--top-margin, 1.5rem);
+  font-size: var(--fonts-md);
+}
+
+
+.user_interaction {
+  display: flex;
+  gap: 2rem;
+  margin: var(--margin-sm) 0;
+}
+
+
+.user_interaction button {
+  width: 45%;
+  background-color: var(--btn-links-color);
+  padding: var(--v-sm-padding, 0.8rem 0.7rem);
+  color: var(--white);
+  font-weight: 500;
+  border: none;
+  border-radius: var(--border-rad, 0.6rem);
+}
+
+
+.user_interaction a {
+  display: flex;
+  text-decoration: underline;
+  text-underline-offset: 0.3125rem;
+  text-decoration-thickness: 0.1rem;
+  align-items: center;
+  font-size: var(--fonts-sm);
+  font-weight: 500;
+}
+
+
+.check_list_box {
+  color: var(--main-text-color);
+  margin: var(--margin-md) -0.2rem;
+  color: var(--main-text-color);
+  display: flex;
+}
+
+
+.check_list_icon p {
+  font-size: var(--font, 0.81rem);
+  position: relative;
+  bottom: var(--bottom, 1.375rem);
+  left: var(--left, 1.6875rem);
+  letter-spacing: var(--ltr-spacing, -0.03rem);
+}
+
+
+.check_list_icon:nth-child(2) {
+  margin-left: var(--left-margin, 2.75rem);
 }
