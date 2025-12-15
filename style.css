@@ -64,6 +64,10 @@ body {
 .page-photo {
   display: flex;
   justify-content: center;
+}
+
+
+.page-photo img {
   width: 100%;
   height: auto;
 }
@@ -74,7 +78,7 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   margin: var(--margin-sm) 0rem;
-  font-size: var(--fonts-sm);
+  font-size: var(--font, 0.82rem);
   letter-spacing: var(--spacing-p, -0.05rem);
 }
 
@@ -143,4 +147,41 @@ body {
 
 .check_list_icon:nth-child(2) {
   margin-left: var(--left-margin, 2.75rem);
+}
+
+
+.ham-btn {
+  border: 2px solid red;
+}
+
+
+.menus .links {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  list-style: none;
+  padding: var(--padding-lg);
+  width: 70%;
+  
+}
+
+.links li {
+  display: flex;
+  justify-content: center;
+  padding: var(--padding-md) 0;
+  font-size: var(--font, 1.8rem);
+  font-weight: 600;
+  color: var(--cool-gray);
+  
+  &.offset-link-line {
+    color: var(--btn-links-color);
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 0.14rem;
+  }
+}
+
+@media (min-width: 56.25rem) {
+  
 }
