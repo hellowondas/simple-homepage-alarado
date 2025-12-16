@@ -142,6 +142,7 @@ body {
   bottom: var(--bottom, 1.375rem);
   left: var(--left, 1.6875rem);
   letter-spacing: var(--ltr-spacing, -0.03rem);
+  z-index: -1;
 }
 
 
@@ -156,23 +157,25 @@ body {
 
 
 .menus .links {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   background-color: white;
   list-style: none;
   padding: var(--padding-lg);
   width: 70%;
+  height: 100vh;
   
 }
 
 .links li {
   display: flex;
   justify-content: center;
-  padding: var(--padding-md) 0;
-  font-size: var(--font, 1.8rem);
+  padding: var(--padding, 1.2rem) 0;
+  font-size: var(--font, 1.3rem);
   font-weight: 600;
   color: var(--cool-gray);
+  
   
   &.offset-link-line {
     color: var(--btn-links-color);
@@ -180,6 +183,17 @@ body {
     text-underline-offset: 0.5rem;
     text-decoration-thickness: 0.14rem;
   }
+}
+
+
+.theme-toggle {
+  position: relative;
+  background-color: red;
+  padding: 0;
+  border: none;
+  border-radius: var(--border-rad, 0.875rem);
+  display: flex;
+  
 }
 
 @media (min-width: 56.25rem) {
