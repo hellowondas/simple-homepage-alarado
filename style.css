@@ -47,8 +47,10 @@ body {
   background-color: var(--main-bg-color);
   font-family: var(--main-font);
   padding: var(--padding-sm);
-  max-width: 40rem;
+  display: flex;
+  max-width: var(--body-width, 40rem);
 }
+
 
 
 .menus {
@@ -151,22 +153,17 @@ body {
 }
 
 
-.ham-btn {
-  border: 2px solid red;
-}
-
-
-.menus .links {
+.links {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: white;
+  background-color: var(--white);
   list-style: none;
   padding: var(--padding-lg);
   width: 70%;
   height: 100vh;
-  
 }
+
 
 .links li {
   display: flex;
@@ -176,7 +173,7 @@ body {
   font-weight: 600;
   color: var(--cool-gray);
   
-  
+  /* .links li.offset-link-line */
   &.offset-link-line {
     color: var(--btn-links-color);
     text-decoration: underline;
@@ -187,14 +184,45 @@ body {
 
 
 .theme-toggle {
-  position: relative;
-  background-color: red;
+  position: absolute;
   padding: 0;
+  bottom: 30%;
+  margin: 0 50px;
+  
+  background-color: var(--dark-color);
   border: none;
   border-radius: var(--border-rad, 0.875rem);
   display: flex;
-  
+
+
+  /* tbis is the rounded box that is around either of the theme in any state */
+  > .toggle-slider {
+    position: absolute;
+    background: var(--white);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    right: 0;
+  }
+
+  /* .theme-toggle img */
+  > img {
+      position: relative;
+      width: 1.8rem;
+      height: 1.8rem;
+  }
+
+
+  .theme-toggle.light-mode {
+    background-color: yellow;
+  }
 }
+
+
+.menus .clo {
+  border: 2px solid red;
+}
+
 
 @media (min-width: 56.25rem) {
   
