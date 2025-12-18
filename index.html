@@ -21,36 +21,37 @@
   </head>
   <body>
     <main>
-      <section class="header">
-        <img src="./resources/logo-dark.svg" class="logo">
+      <header class="site_header">
+        <img src="./resources/logo-dark.svg" class="logo" alt="Alarado logo" />
 
-        <nav class="menus">
-          <img src="./resources/hamburger-button.svg" class="ham-btn">
-          <ul class="links">
-            <li class="offset-link-line">About us</li>
-            <li>Product</li>
-            <li>Resource</li>
-            <li>Contact</li>
+        <nav class="primary_nav">
+          <button class="menu-toggle" aria-label="open menu">
+            <img src="./resources/hamburger-button.svg" aria-hidden="true" alt="" />
+          </button>
+
+          <ul class="nav-list">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Resource</a></li>
+            <li><a href="#">Contact</a></li>
 
             <button
               class="theme-toggle"
               role="switch"
               aria-checked="false"
               aria-label="toggle dark mode">
-              <img src="./resources/Moon_fill.svg" alt="" class="moon" aria-hidden="true">
-              <div class="toggle-slider"></div>
-              <img src="./resources/Sun_fill.svg" alt="" class="sun" aria-hidden="true">
+              <img src="./resources/Moon_fill.svg" alt="" class="moon" aria-hidden="true" />
+              <span class="toggle-slider"></span>
+              <img src="./resources/Sun_fill.svg" alt="" class="sun" aria-hidden="true" />
+            </button>
+
+            <button class="nav-close" aria-label="close">
+              <img src="./resources/close-button.svg" class="" alt="" aria-hidden="true" />
             </button>
           </ul>
-
-          <div>
-            <img class="./resources/close-button.svg">
-          </div>
         </nav>
+      </header>
 
-
-      </section>
-      
       <article class="page-photo">
         <img 
           src="./resources/hero-image-simple-homepage.png"
@@ -87,7 +88,6 @@
             <p>No software to install</p>
           </div>
         </div>
-
       </article>
     </main>
   </body>
@@ -95,4 +95,5 @@
 <script>
   eruda.init();
 </script> -->
+  <script src="app.js" defer></script>
 </html>
