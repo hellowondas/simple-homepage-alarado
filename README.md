@@ -44,7 +44,8 @@ The goals of this project are to:
 
 - How to compress local images from `.jpeg` to `webp` to optimize web perfoma
 - Responsive layout techniques css grid and media queries
-- 
+- How to make the navigation menu animate, since `display: none` cannot animate, so i made the navigation menu disappear off the screen by using `translateX: 100%` first &  with `visibility: hidden` & set `opacity: 0`, i added all these on the default state of the navigation menu, i.e the menu styled with css. So when i toggle class `.active`. `visibility` becomes visible using the styled css and the animation works
+- How to toggle open and close a navigation menu using `classList.toggle()` & evenListener
 
 ## 🙏 Acknowledgements
 
