@@ -35,15 +35,32 @@
             <li><a href="#">Resource</a></li>
             <li><a href="#">Contact</a></li>
 
-            <button
+
+            <label
               class="theme-toggle"
-              role="switch"
-              aria-checked="false"
-              aria-label="toggle dark mode">
-              <img src="./resources/Moon_fill.svg" alt="" class="moon" aria-hidden="true" />
+              for="dark-mode-toggle"
+            >
+              <input 
+                type="checkbox"
+                id="dark-mode-toggle"
+                class="theme-toggle-input"
+                aria-label="toggle-mode"
+                onclick="changeMode()"
+              />
+              <img 
+                src="./resources/Moon_fill.svg" 
+                alt="" 
+                class="moon" 
+                aria-hidden="true" 
+              />
               <span class="toggle-slider"></span>
-              <img src="./resources/Sun_fill.svg" alt="" class="sun" aria-hidden="true" />
-            </button>
+              <img 
+                src="./resources/Sun_fill.svg" 
+                alt="" 
+                class="sun" 
+                aria-hidden="true" 
+              />
+            </label>
 
             <button class="nav-close" aria-label="close">
               <img src="./resources/close-button.svg" class="" alt="" aria-hidden="true" />
@@ -91,9 +108,9 @@
       </article>
     </main>
   </body>
-<!--   <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
 <script>
   eruda.init();
-</script> -->
+</script>  -->
   <script src="app.js" defer></script>
 </html>

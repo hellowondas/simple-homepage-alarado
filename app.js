@@ -3,6 +3,9 @@ const openMenu = document.querySelector(".nav-list");
 const closeMenu = document.querySelector(".nav-close");
 
 
+// const themeToggle = document.getElementById('dark-mode-toggle');
+
+
 /* i had earlier written the code using just the event listener way but i wanted to simplify it, so i created a function that changes the state (active) of the element selected & used that function in the event listener that is listening for clicks in both buttons */
 function toggleNav() {
   openMenu.classList.toggle('active');
@@ -10,3 +13,9 @@ function toggleNav() {
 
 toggleMenu.addEventListener('click', toggleNav);
 closeMenu.addEventListener('click', toggleNav);
+
+
+function changeMode() {
+  var themeSwitch = document.body;
+  themeSwitch.classList.toggle('dark-mode');
+}
